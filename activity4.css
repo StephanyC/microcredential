@@ -1,0 +1,178 @@
+*{box-sizing:border-box;}
+/* Background */
+.bg{
+    width:100%;
+    display:block;
+    animation-delay:4s;
+    animation-name:Ground;
+    animation-duration:5s;
+    animation-fill-mode: backwards;
+}
+/* Animation for Background */
+@keyframes Ground{
+    0%,100%{-webkit-filter: invert(0%);}
+    60%{-webkit-filter: invert(100%);}
+}
+/* Animation for Camera */
+.camera{
+position:absolute;
+top:15%;
+left:10%;
+animation-name: zoom;
+animation-duration: 2s;
+animation-iteration-count:8s;
+animation-fill-mode:backwards;
+}
+@keyframes zoom{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.2);}
+    90%{transform:scale(1.2);}
+    100%{transform: scale(2);}
+}
+/* Animation for the text Cheese */
+.top-left{
+    position:absolute;
+    top:14px;
+    left:80px;
+    text-align:center;
+    color:red;
+    font-family: fantasy;
+    font-size: 80px;
+    animation-name:zoom1;
+    animation-duration: 2s;
+    animation-iteration-count: 8s;
+    width:100%;
+    animation-fill-mode: backwards;
+}
+
+@keyframes zoom1{
+    0%{transform: scale(0);}
+    10%{transform: scale(1.5);}
+    90%{transform:scale(1.2);}
+    100%{transform: scale(2);} 
+}
+.animation{
+    position:relative;
+}
+/* Animation for twelve hearts */
+.heart1{
+    position:absolute;
+    top:5%;
+    left:40%;
+    animation:love1 0.6s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes love1{
+   50%{opacity:0;}
+}
+.heart2{
+    position:absolute;
+    top:35%;
+    left:20%;
+    animation:love2 0.7s linear infinite;
+    animation-delay:3s;
+    animation-delay:4s;
+}
+@keyframes love2{
+    10%{opacity:5%}
+}
+.heart3{
+    position:absolute;
+    top:25%;
+    left:15%;
+    animation:love3 0.8s linear infinite;
+    animation-delay:3s;
+}
+@keyframes love3{
+    40%{opacity:25%;}
+}
+.heart4{
+    position:absolute;
+    top:10%;
+    left:50%;
+    animation:love4 0.3s linear infinite;
+    animation-delay:5s;
+}
+@keyframes love4{
+    30%{opacity:45%;}
+}
+.heart5{
+    position:absolute;
+    top:15%;
+    left:66%;
+    animation:love5 0.9s linear infinite;
+    animation-delay:6s; 
+}
+@keyframes love5{
+    25%{opacity:35%;}
+}
+.heart6{
+    position:absolute;
+    top:46%;
+    left:68%;
+    animation:love6 0.10s linear infinite;
+    animation-delay:2.5s;  
+}
+@keyframes love6{
+    15%{opacity:40%;}
+}
+.heart7{
+    position:absolute;
+    top:35%;
+    left:70%;
+    animation:love7 0.11s linear infinite;
+    animation-delay:3.5s;  
+}
+@keyframes love7{
+    20%{opacity:10%;}
+}
+.heart8{
+    position:absolute;
+    top:25%;
+    left:68%;
+    animation:love8 0.13s linear infinite;
+    animation-delay:5.5s;  
+}
+@keyframes love8{
+    15%{opacity:20%;}
+}
+.heart9{
+    position:absolute;
+    top:45%;
+    left:10%;
+    animation:love9 0.12s linear infinite;
+    animation-delay:2.5s;   
+}
+@keyframes love9{
+    8%{opacity:5%;}
+}
+.heart10{
+    position:absolute;
+    top:16%;
+    left:58%;
+    animation:love10 0.9s linear infinite;
+    animation-delay:5.4s;    
+}
+@keyframes love10{
+ 6%{opacity:14%;}
+}
+.heart11{
+    position:absolute;
+    top:15%;
+    left:25%;
+    animation:love11 0.8s linear infinite;
+    animation-delay:1s;     
+}
+@keyframes love11{
+    13%{opacity:16%;}
+}
+.heart12{
+    position:absolute;
+    top:9%;
+    left:35%;
+    animation:love12 0.5s linear infinite;
+    animation-delay:1.5s;
+}
+@keyframes love12{
+    16%{opacity:13%;}
+}
