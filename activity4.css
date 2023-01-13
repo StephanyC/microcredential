@@ -10,9 +10,10 @@
 }
 /* Animation for Background */
 @keyframes Ground{
-    0%,100%{-webkit-filter: invert(0%);}
+    0%,100%{-webkit-filter:invert(0%);}
     60%{-webkit-filter: invert(100%);}
 }
+
 /* Animation for Camera */
 .camera{
 position:absolute;
@@ -32,24 +33,23 @@ animation-fill-mode:backwards;
 /* Animation for the text Cheese */
 .top-left{
     position:absolute;
-    top:14px;
-    left:80px;
+    top:8%;
+    left:10%;
     text-align:center;
     color:red;
     font-family: fantasy;
     font-size: 80px;
-    animation-name:zoom1;
+    animation-name: zoom1;
     animation-duration: 2s;
-    animation-iteration-count: 8s;
-    width:100%;
-    animation-fill-mode: backwards;
+    animation-iteration-count:8s;
+    animation-fill-mode:backwards;
 }
 
 @keyframes zoom1{
     0%{transform: scale(0);}
     10%{transform: scale(1.5);}
-    90%{transform:scale(1.2);}
-    100%{transform: scale(2);} 
+    99%{transform:scale(1.5);}
+    100%{transform: scale(0);} 
 }
 .animation{
     position:relative;
