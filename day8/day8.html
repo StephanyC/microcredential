@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8-Stephany Canela </title>
+</head>
+<body>
+    <h1>Stephany Canela</h1>
+  <!-- Javascript -->
+    <script>
+//         let firstName,lastName;
+//         let x = 100,y= -1.5,z= 7;
+//         let boolean1=true, boolean2=false;
+//         // when variable has no value it is undefined
+//         // when the variable has a value of null, it was purposely made to be empty
+//         let name= null;
+
+       
+//         // value for the variable
+//         firstName="Stephany";
+//         firstName='Maria';
+
+//         console.log('Hello there');
+//         // This note will appear in your console when you inspect on browser
+//         console.log(firstName,y);
+//         console.log('First name=',firstName);
+//         console.log(firstName +'is my first name');
+//         console.log(`${firstName}is my first name`);
+
+//        let fullName=prompt('Please enter a name');
+//        console.log(`The entered name is: ${fullName}`);
+
+//        let num1=parseInt(prompt('Enter number 1: '));
+//        let num2=prompt('Enter number 2: ');
+//        num2=parseInt(num2);
+
+//        let sum= num1 + num2;
+//        let allUpperCase=fullName.toUpperCase();
+//        console.log(allUpperCase);
+
+//        let myString="Queensborough Community College";
+//        console.log(myString);
+//        let stringLocation=myString.search('Co');
+//        console.log(`The index location for Co is: ${stringLocation}`);
+
+//     //    remove white space in a string
+//     let name1='                         William        Smith';
+//     // used the trim code to remove the white space 
+//    // subtracting characters
+//    let subWord=myString.substr(6,7);
+//    console.log(subWord);
+
+// //    first find the position of the word and then subtract 5 character from the word 
+//     let findFirst=myString.search('Com');
+//     let subSec=myString.substr(findFirst,5);
+//     console.log(`The subtracted characters are${subSec}`);
+
+//     // extract characters from an string 
+//     let extractCharacter=myString.slice(6,10);
+//     console.log(`The extracted characters are ${extractCharacter}`);
+
+    // Arrays 
+    let fruits;
+    fruits= ['apples','oranges','grapes','h'];
+
+    let cars=['Nissian','Telsa','Mazda','Mercedez'];
+    let mixedItems= [65,true,'cats'];
+
+    console.log(cars);
+    console.log(mixedItems);
+    console.log(`The second item in array fruits is:${fruits[1]}`);
+
+    let countries= ['Canada','USA',['Mexico','Colombia','Peru']]; // nesting arrays 
+    console.log(countries);
+    console.log(countries[2][1]);
+
+    // create a copy of an  array  
+    let newItems=mixedItems; // direct copy: link update 
+    let newItemsSlice=mixedItems.slice(); //make an independent copy: updates are not linked
+
+    // find the second character on a third item 'cats'
+    let indexCats=mixedItems.indexOf('cats');
+    let charCats= mixedItems[indexCats[1]];
+
+
+    //    Activity 5
+    console.log('Activity 5.1');
+   
+    let yourName=prompt('Enter Your Name');
+    let luckyNumber=prompt('Enter Your Lucky Number');
+    console.log('Welcome to the program' + yourName + 'Your lucky number is' + luckyNumber);
+
+    let Names=prompt('Please enter Name');
+    let Num=prompt('Enter Your Number');
+    console.log(`Good Morning ${Names}. Your entered number ${Num}.`);
+
+    console.log('Activity 5.2');
+     
+    let String1="Professor";
+    console.log(String1);
+    let stringLocation=String1.search('Pro');
+    console.log(`The second letter of the word ${String1} is:` + (String1[1]));
+
+    let msgLength=String1.length;
+    console.log(`The length of the word ${String1} is ${msgLength}`);
+
+    let makeUpper=String1.toUpperCase();
+    console.log(makeUpper);
+   
+    newString=String1.slice(-2);
+    console.log(`The last two characters of the word ${String1} is ${newString}`);
+
+    console.log('Activity 5.3')
+    
+    let subjects;
+    subjects= ["english","math","science","art"];
+    let mixedArray=[100,true,false,'history','gym'];
+    console.log(`Mixed array with initial values:${mixedArray}`);
+
+    let Animal=prompt('Enter an Animal Name');
+    mixedArray.push(Animal);
+    console.log(`Mixed array with an new animal added to the end: ${mixedArray}`);
+
+    let NegNumber= prompt('Enter a Negative Number');
+    mixedArray.shift(NegNumber);
+    console.log(`Mixed array with a new NEGATIVE NUMBER added to the front,beginning of the array: ${mixedArray}`);
+
+
+    let CopymixedArray=mixedArray.slice();
+    CopymixedArray.reverse();
+    console.log(`Mixed array ${mixedArray} and reverse of copy array ${CopymixedArray}`);
+
+    </script>  
+</body>
+</html>
