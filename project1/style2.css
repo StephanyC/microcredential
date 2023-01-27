@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Title */
+h1{
+    text-align: center;
+    font-style: italic;
+    
+}
+
+body{
+    background-color:#DADBDB;
+ }
+
+ /* Image 1: Los 3 Gropes */
+ li{
+    text-align: left;
+ }
+
+ ul{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    font-weight: bold;
+    text-align: justify;
+    left:720px;
+    bottom:220px;
+ }
+ 
+ /* Animation added to image*/
+.image1{
+    position:relative;
+    display: block;
+    animation: fadeIn3 5s infinite;
+    border:radius 8px;
+    box-shadow: 1px 1px 8px black;
+}
+
+@keyframes fadeIn3 {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+ /* navigation tabs */
+.horizontal{
+    background-color: dimgray;
+    position: fixed;
+    top:0px;
+    width:100%;
+}
+.link1{
+    color: burlywood;
+    display:inline-block;
+    padding: 1em 1em;
+    width:23%;
+    text-align:center;
+}
+
+.link1:hover{
+    color: azure;
+    text-decoration: none;
+}
+/* Animation for image 3 */
+.image3{
+    position:relative;
+    display: block;
+    animation: fadeIn4 5s infinite;
+    border:radius 8px;
+    box-shadow: 1px 1px 8px black;
+}
+
+@keyframes fadeIn4 {
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+
+
+
+
+
+
+

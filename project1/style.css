@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+background-color:#DADBDB;
+}
+
+/* navigation tabs */
+.horizontal{
+    background-color: dimgray;
+    position: fixed;
+    top:0px;
+    width:100%;
+}
+
+.link1{
+    color: burlywood;
+    display:inline-block;
+    padding: 1em 1em;
+    width:23%;
+    text-align:center;
+}
+
+.link1:hover{
+    color: azure;
+    text-decoration: none;
+}
+/* Title of page */
+h1{
+    font-size: 80px;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    animation: title 5s infinite;
+    border-radius: 12px;
+}
+
+@keyframes title{
+    0%{background-color:red;}
+    25%{background-color:white;}
+    50%{background-color: blue;}
+}
+
+/* Image 1 of Page */
+.image1{
+    position:absolute;
+    border: radius 8px;
+    box-shadow: 1px 1px 8px black;
+    animation:fadeIn 5s infinite;
+    display:block;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+/* Text of Image 1 */
+p{
+    position:absolute;
+    top:356px;
+    right:78px;
+    left:800px;
+    font-weight: bold;
+}
+
+/* Image 2 */
+.image2{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    top:500px;
+    right:5px;
+    animation: fadeIn1 5s infinite;
+    border:radius 8px;
+    box-shadow: 1px 1px 8px black;
+}
+
+@keyframes fadeIn1{
+    0%{opacity:0;}
+    100%{opacity:1;}
+    0%,100%{-webkit-filter:invert(0%);}
+    60%{-webkit-filter:invert(100%);}
+}
+
+.txt{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top:550px;
+    font-family: 'Playfair Display SC', serif;
+}
+/* List Text */
+ul{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    top:140px; 
+    font-weight: bold;
+    text-align: justify;
+}
+
+li{
+text-align: left;
+}
+h2{
+    font-size: 30px;
+    font-family: 'Playfair Display SC', serif;
+    text-align:left;
+}
+.content{
+    top:300px;
+   }
+
+/* Image 3 */
+.resort{
+    position:relative;
+    display: block;
+    margin-left: auto;
+    top:300px;
+    right:5px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Playfair Display SC', serif;
+    text-align:left;
+}
+
+.image3{
+    animation: fadeIn2 5s infinite backwards;
+    border:radius 8px;
+    box-shadow: 1px 1px 8px black;
+}
+
+@keyframes fadeIn2{
+    0%{opacity:0;}
+    100%{opacity:1;}
+    0%,100%{-webkit-filter:sepia(0%);}
+    60%{-webkit-filter:sepia(100%);}
+}
+
+ol{
+    position:absolute;
+    top:50px;
+    right:78px;
+    left:800px;
+    font-weight: bold;
+    text-align: left;
+}
+/* Table for resort */
+table,th,td{
+    border:1px solid ;
+}
+
+table{
+    position:absolute;
+    top:300px;
+    right:78px;
+    left:800px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h4{
+    position:absolute;
+    top:250px;
+    right:78px;
+    left:800px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* external website link */
+.Book{
+    background-color:darkslategrey;
+    color:honeydew;
+    display:block;
+    width:20%;
+    text-align:center;
+    margin:auto;
+    font-size:1.5em;
+    padding:1em;
+    margin-top:1em;
+    border-radius:5px;
+    top:250px;
+    /* right:78px;
+    left:800px; */
+}
