@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    background-color:darkgray;
+    display:flex;
+    flex-direction: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    width:17em;
+    margin:1%;
+    border: solid 1px;
+    /* background-color: white; */
+}
+
+.imgCont{
+    width: 100%;
+    height:62%;
+    background-color:white ;
+    overflow: hidden;
+}
+
+.itemImg{
+    width:40%;
+    margin-left:30%;
+    padding-top:1em;
+}
+
+.infoItem{
+    text-align: center;
+}
+
+.p1{
+    color: lightseagreen;
+    font-weight: 900;
+}
+
+.p2{
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-top: -0.5em;
+}
+
+.p3{
+    color:rgb(50,50,50);
+    margin-top: -0.5em;
+}
+
+.p4{
+    color: red;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top:1em;
+}
+
+.p5{
+    color: red;
+    font-weight: 900;
+    margin-top: -1em;
+}
+
+.link{
+background-color:rgb(50,50,50);
+color: white;
+display: block;
+width: 100%;
+text-align: center;
+padding: 0.5em;
+font-size: 1.2em;
+text-decoration: none;
+}
+
+.link:hover{
+    background-color: whitesmoke;
+    color:rgb(50,50,50);
+    transition:ease-in-out 0.3s;
+}
+
+/*Modal Window item */
+
+.modalWindow{
+    position: fixed;
+    top: 0%;
+    bottom:0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50,50,50,0.6);
+    display:none;
+}
+
+.modalContent{
+    width:40%;
+    height: 80%;
+    margin:5% 20%;
+    background-color: white;
+}
+
+.modalHead{
+    width: 70%;
+    font-size: 1.2em;
+    font-weight:bolder;
+    color: rgb(50,50,50);
+    border-bottom: inset lightgray 2px;
+    margin: 1em 3em;
+    padding-top: 1em;
+    float: left;
+}
+
+.modalHeadX{
+    float: right;
+    font-size:1.5em;
+    padding: 0.5em;
+}
+
+.modalHead:hover{
+    background-color: gray;
+   transition:ease-in-out 0.3s;
+   color: white;
+}
+
+.modalTop{
+    display:flex;
+}
+
+.modalBody{
+  display:flex;
+}
+
+.modalImg{
+    width:30%;
+}
+.modalInfo {
+    width:70%;
+    text-align: center;
+}
+
+.modalImg img{
+    width:120%;
+   padding-left:5em;
+}
+
+
