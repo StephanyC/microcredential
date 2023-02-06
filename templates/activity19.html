@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stephany Canela</h1>
+    <form action="{{url_for('thankyou')}}" method="post"></form>
+    <fieldset>
+        <legend>
+            Collecting Weight and Height for BMI
+        </legend>
+        <div style="margin:1em;">
+        <label for="email">Enter email</label>
+        <input type="text" id="email" placeholder="Enter an email address" name="email_address" required>
+      </div>
+      <div style="margin:1em;">
+        <label for="height">Enter height:</label>
+        <input type="text" id="height" placeholder="Enter a height" required>
+    </div>
+<div style = "margin:1em;">
+    <label for="weight">Enter Weight:</label>
+    <input type="text" id="weight" placeholder="Enter a weight" required>
+</div>
+<div style="margin:1em;">
+    <button type="submit" name="button">SUMBIT</button>
+</div>
+    </fieldset>
+</body>
+</html>
