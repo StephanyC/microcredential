@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+}
+
+.paragraph{
+animation: 1s text ease infinite;
+}
+
+@keyframes text{
+    0% {
+        opacity: 0;
+        transform: rotateX(90def);
+      }
+      50% {
+        opacity: 1;
+        transform: rotateX(720deg);
+      }
+      100% {
+        /* animate nothing to pause animation at the end */
+        opacity: 1;
+        transform: rotateX(720deg);
+}
+}
+
+#products{
+animation:cont 4s ease-out infinite;
+}
+ 
+@keyframes cont{
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
+      20% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+
+h6{
+    text-align: center;
+    color: chocolate;
+    font-size:30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+/* navigation tabs */
+
+.horizontal{
+    position:absolute;
+    top:0px;
+    width:60%;
+    left:40%;
+}
+
+.link1{
+    color:chocolate;
+    display:inline-block;
+    padding: 1em 1em;
+    width:15%;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:100%;
+    transition: ease-in-out 0.2s;
+    left:10%;
+}
+
+.link1:hover{
+    color:whitesmoke;
+    text-decoration: none;
+    background-color:black;
+    border-radius: 0.5em;
+}
+
+
+/* Logo Choco Sweets */
+h1{
+    color: chocolate;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size:20px;
+}
+
+.heart1{
+position:absolute;
+top:10px;
+bottom:90px;
+left:51px;
+}
+/* Image for Mix Chocolates */
+.container{
+    display:flex;
+    flex-direction: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:300px;
+    width:300px;
+    position:relative;
+    overflow:hidden;
+}
+
+.itemImg{
+    opacity:0.6;
+    /* left:60%;; */
+    top:0%;
+    height:100%;
+    width:100%;
+}
+/* Shopping Bag Icon */
+.shopbag{
+     top:100%;
+}
+
+.item{
+    position:relative;
+    width:100%;
+}
+/* Text for Mixed Chocolate */
+.paragraph{
+    position: absolute;
+    top:20%;
+    left:20%;
+    right:20%;
+    text-align:center;
+    padding:1em;
+    font-size:4em;
+    color:bisque;
+    /* border: solid green; */
+    font-weight: 900;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Button to Shop Now */
+.button{
+    position: absolute;
+}
+/* Shop Now Attributes for Button */
+.shopLink{
+    background-color:black;
+    color:white;
+    display:block;
+    width:30%;
+    text-align:center;
+    margin:auto;
+    font-size:1.5em;
+    padding:1em;
+    margin-top:1em;
+    border-radius:4px; 
+}
+
+.shopLink:hover{
+    background-color:transparent;
+    color:chocolate;
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.item .shopLink{
+    position:absolute;
+    top: 60%;
+    right:0;
+    left:5%;
+}
+/* CSS for 1st row of chocolates */
+.image2{
+    /* border:solid blue; */
+    width:30%;
+    padding:1em;
+}
+
+.image2 img{
+  width:100%;
+}
+
+.chocolates{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* CSS for 2nd row of chocolates */
+
+.chocolates2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row2{
+    /* border:solid blue; */
+    width: 30%;
+}
+
+.row2 img{
+    width:100%;
+}
+
+/* CSS for the Image Item Row 1 and Row 2 */
+
+.infoItem{
+    text-align: center;
+}
+
+.imgCont{
+    width: 100%;
+    height:34%;
+    background-color:white ;
+    overflow: hidden;
+}
+
+.fudge{
+    width:40%;
+    margin-right:40%;
+    padding-top:1em;
+}
+
+.p1{
+    color:darkturquoise;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.p2{
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: -0.5em;
+    font-family:monospace;
+}
+
+.p3{
+    color:chocolate;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top:1em;
+}
+
+/* Add to Bag CSS */
+
+.link{
+background-color:rgb(50,50,50);
+color: white;
+display:block;
+width: 100%;
+text-align: center;
+padding: 0.5em;
+font-size: 1.2em;
+text-decoration: none;
+}
+
+.link:hover{
+    background-color: whitesmoke;
+    color:chocolate;
+    transition:ease-in-out 0.3s;
+}
+
+/* Footer For the ending of the page (example contact info) */
+.footer{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 400;
+background-color:blanchedalmond;
+padding:40px 0px;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom:25px;
+    color:purple;
+}
+
+.footer.social a{
+    font-size:60px;
+    color:inherit;
+    border:50px solid black;
+    width:60px;
+    height:60px;
+    line-height:38px;
+    display:inline-block;
+    text-align:center;
+    border-radius: 50%;
+    margin:0.8px;
+    opacity:0.75;
+}
+
+.footer .social a:hover{
+    opacity:0.9;
+}
+
+.copyright{
+    text-align: center;
+}
+
+
+.footer ul{
+    margin-top: 0;
+    padding:0;
+    list-style: none;
+    font-size: 18px;
+    line-height:1.6;
+    margin-bottom:0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color:inherit;
+    text-decoration: none;
+    opacity:0.8;
+}
+
+.footer ul li{
+    display:inline-block;
+    padding:0 15px;
+}
+
+.footer ul li a:hover{
+    opacity:1;
+}
+
+
+/* CSS for Type of Chocolate Page */
+.bar .dark .swiss .ruby{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+ .overlay{
+    position: absolute;
+    bottom:4;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+    color:#f1f1f1;
+    width:12;
+    transition:.5s ease;
+    opacity:white;
+    font-size: 16px;
+    padding:8px;
+    text-align: center;
+} 
+
+/*Modal Window item */
+
+.modalWindow{
+    position: fixed;
+    top: 0%;
+    bottom:0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(50,50,50,0.6);
+    display:none;
+}
+
+.modalContent{
+    width:40%;
+    height: 80%;
+    margin:5% 20%;
+    background-color: white;
+}
+
+.modalHead{
+    width: 70%;
+    font-size: 1.2em;
+    font-weight:bolder;
+    color: rgb(50,50,50);
+    border-bottom: inset lightgray 2px;
+    margin: 1em 3em;
+    padding-top: 1em;
+    float: left;
+}
+
+.modalHeadX{
+    float: right;
+    font-size:1.5em;
+    padding: 0.5em;
+}
+
+.modalHead:hover{
+    background-color: gray;
+   transition:ease-in-out 0.3s;
+   color: white;
+}
+
+.modalTop{
+    display:flex;
+}
+
+.modalBody{
+  display:flex;
+}
+
+.modalImg{
+    width:30%;
+}
+.modalInfo {
+    width:70%;
+    text-align: center;
+}
+
+.modalImg img{
+    width:120%;
+   padding-left:5em;
+}
+
+/* Styling for the Images */
+
+.bar{
+    width:80%;
+    top:60%;
+    bottom:10%;
+}
+
+.chocolates3{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.dark{
+    width:80%;
+    height:60%;
+}
+
+.swiss{
+    width:80%;
+    height:90%;
+    right:80%;
+    left:5%;
+}
+
+.ruby{
+    top:50%;
+    width:90%;
+    height:90%;
+}
+
+.chocolates4{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width:768px){
+    .image2{
+        width:100%;
+  }
+ 
+.paragraph{
+    animation: 1s text ease infinite;
+    
+}
+};
+
+/* About Us CSS Page */
+
+.title .h3 .p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.section{
+    width:100%;
+    min-height:100vh;
+    background-color:#ddd;
+}
+
+.container2{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:100px;
+}
+
+.content-section{
+    float:left;
+    width:55%;
+}
+
+.image-section{
+    float:right;
+     width:40%;
+}
+
+.image-section img{
+    width:100%;
+    height:auto;
+    top:0%;
+}
+
+
+.content-section .title{
+    font-size:19px;
+}
+
+.title{
+    top:30%;
+    text-align: center;
+   font-family: monospace;
+}
+
+.content-section content h3{
+    margin-top:21px;
+    color:#5d5d5d;
+}
+
+.content-section .content p{
+   margin-top:10px; 
+   font-family: sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+}
+
+.content-section .content .button{
+    margin-top:30px;
+}
+
+.content-section .content .button{
+    background-color:black;
+    padding: 12px 40px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button:hover{
+    background-color:white;
+    color:chocolate;
+}
+
+a:hover{
+    color:black;
+}
+
+.button{
+    top:85%;
+}
+
+.content-section .social{
+    margin:40px 40px;
+}
+.content section .social i{
+    color:chocolate;
+    font-size:30px;
+    /* padding:0px 10px; */
+}
+
+.content section .social i:hover{
+    color:#3d3d3d;
+}
+
+@media screen and (max-width:768px){
+    .container2{
+        width:80%;
+        display:block;
+        margin:auto;
+        padding-top:50px;
+    }
+    .content-section{
+        float:none;
+        width:100%;
+        display: block;
+        margin:auto;
+    }
+    .image-section{
+        float:none;
+        width:100%;
+
+    }
+    .image-section img {
+       width:100%;
+       height:auto;
+       display:block;
+    }
+
+    .content-section .title{
+        text-align:center;
+        font-size:19px;
+    }
+    .content-section .content .button{
+        text-align: center;
+    }
+    .content-section .content .button {
+        padding:9px 30px;
+    }
+    .content-section .social {
+        text-align: center;
+    }
+    .content-section .content .button {
+        padding:9px 30px;
+    }
+    /* .button{
+        float:none;
+        width:100%;
+        position: absolute;
+    } */
+}
+
+
